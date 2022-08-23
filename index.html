@@ -118,6 +118,7 @@
     document.body.appendChild(script);
 
     function GetToken() {
+      var returnToken ="";
       let name = "token=";
       let decodedCookie = decodeURIComponent(document.cookie);
       let ca = decodedCookie.split(';');
@@ -127,10 +128,11 @@
           c = c.substring(1);
         }
         if (c.indexOf(name) == 0) {
+          returnToken =c.text();
           window.location.replace("https://kobecheah.github.io/TreasureHunt/");
         }
       }
-      return c;
+      return returnToken;
     }   
   </script>
 </body>
