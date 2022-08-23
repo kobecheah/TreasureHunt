@@ -117,22 +117,22 @@
     };
     document.body.appendChild(script);
 
-    function GetToken() {
-      var returnToken ="Testing";
-      let name = "token=";
-      let decodedCookie = decodeURIComponent(document.cookie);
-      let ca = decodedCookie.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-          c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-          returnToken =c;
-        }
-      }
-      return returnToken;
-    }   
+    // function GetToken() {
+    //   var returnToken ="Testing";
+    //   let name = "token=";
+    //   let decodedCookie = decodeURIComponent(document.cookie);
+    //   let ca = decodedCookie.split(';');
+    //   for (let i = 0; i < ca.length; i++) {
+    //     let c = ca[i];
+    //     while (c.charAt(0) == ' ') {
+    //       c = c.substring(1);
+    //     }
+    //     if (c.indexOf(name) == 0) {
+    //       returnToken =c;
+    //     }
+    //   }
+    //   return returnToken;
+    // }   
   </script>
 </body>
 
