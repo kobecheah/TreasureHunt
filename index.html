@@ -56,11 +56,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/BuildApp.loader.js";
+      var loaderUrl = buildUrl + "/TreasureHuntBuild.loader.js";
       var config = {
-        dataUrl: buildUrl + "/BuildApp.data",
-        frameworkUrl: buildUrl + "/BuildApp.framework.js",
-        codeUrl: buildUrl + "/BuildApp.wasm",
+        dataUrl: buildUrl + "/TreasureHuntBuild.data",
+        frameworkUrl: buildUrl + "/TreasureHuntBuild.framework.js",
+        codeUrl: buildUrl + "/TreasureHuntBuild.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TreasureHunt",
@@ -89,7 +89,7 @@
         // performance, uncomment the following line:
         // config.devicePixelRatio = 1;
 
-       // unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
